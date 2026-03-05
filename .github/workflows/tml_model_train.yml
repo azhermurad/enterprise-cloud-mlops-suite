@@ -40,7 +40,7 @@ jobs:
       - name: Upload training outputs
         uses: actions/upload-artifact@v4
         with:
-          name: training-output
+          name: training-results-${{ github.run_number }}
           path: traditional_ml_deployment_pipeLine/artifacts
           
 
