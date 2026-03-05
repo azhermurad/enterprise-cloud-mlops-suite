@@ -40,7 +40,7 @@ jobs:
       - name: Upload training outputs
         uses: actions/upload-artifact@v4
         with:
-          name: training-results-${{ github.run_number }}
+          name: training-results-${{ matrix.python-version }}
           path: traditional_ml_deployment_pipeLine/artifacts
           
 
