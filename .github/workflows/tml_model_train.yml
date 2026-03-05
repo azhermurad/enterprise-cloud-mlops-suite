@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: training-output
-          path: python traditional_ml_deployment_pipeLine/outputs/
+          path: python traditional_ml_deployment_pipeLine/artifacts/
           
 
 
