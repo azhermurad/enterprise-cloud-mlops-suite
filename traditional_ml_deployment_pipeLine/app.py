@@ -13,6 +13,10 @@ if not MODEL_PATH.exists():
 
 model = joblib.load(MODEL_PATH)
 
+@app.route("/", methods=["GET"])
+def checkStatus():
+    return jsonify({"status": "API is working"})
+
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok"})
