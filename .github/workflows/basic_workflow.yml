@@ -1,0 +1,29 @@
+
+name: Basic Workflow
+on:
+  workflow_dispatch:
+  inputs:
+    name:
+      description: 'Your name'
+      required: true
+      default: 'World'
+    city:
+      description: 'Your city'
+      required: true
+      default: 'New York'
+    environment:
+      description: "Choose environment"
+      required: true
+      default: "staging"
+      type: choice
+      options:
+        - staging
+        - production
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the user
+        run: |
+          echo "Hello, ${{ github.event.inputs.name }}"
+          echo "How's the weather in ${{ github.event.inputs.city }}?"
