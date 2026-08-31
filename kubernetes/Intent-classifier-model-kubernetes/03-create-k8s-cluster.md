@@ -64,7 +64,4 @@ This removes the control plane and node group to avoid unwanted AWS charges.
 
 ---
 
-If you want, I can also share  
-**• a clean eksctl YAML config file**,  
-**• a version for private clusters**, or  
-**• a production-ready node group setup.**
+
